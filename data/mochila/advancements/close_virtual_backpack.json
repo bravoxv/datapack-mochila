@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "close_inventory": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "location": {}
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "mochila:backpack_logic/close_player_backpack"
+  }
+}

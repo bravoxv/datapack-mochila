@@ -1,0 +1,3 @@
+execute as @s if items entity @s hotbar.0.. inventory.-99.. {item:{id:"minecraft:ender_chest"}} run data modify storage mochila:player_data Custom.Ender set value true
+execute as @s if data storage mochila:player_data Custom.Ender run tellraw @s {"text":"[Mochila] Mejora de Cofre de Ender agregada.","color":"gold"}
+execute as @s if data storage mochila:player_data Custom.Ender run clear @s minecraft:ender_chest 1

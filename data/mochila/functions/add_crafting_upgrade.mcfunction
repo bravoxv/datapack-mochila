@@ -1,0 +1,3 @@
+execute as @s if items entity @s hotbar.0.. inventory.-99.. {item:{id:"minecraft:crafting_table"}} run data modify storage mochila:player_data Custom.Crafting set value true
+execute as @s if data storage mochila:player_data Custom.Crafting run tellraw @s {"text":"[Mochila] Mejora de Mesa de Crafteo agregada.","color":"gold"}
+execute as @s if data storage mochila:player_data Custom.Crafting run clear @s minecraft:crafting_table 1
